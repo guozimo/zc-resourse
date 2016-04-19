@@ -34,3 +34,28 @@ if(MainListColKind[i] == 'text' || MainListColKind[i] == 'textbr') {
         }
     })
 }
+
+
+
+
+
+
+
+
+//正则颜色捕获和匹配
+
+
+
+var reg1=/^(?:font)=(#\w{3,6})$/;
+var reg2=/^(?:block)=(#\w{3,6})$/;
+str1=reg1.exec(rowsCompare);
+str2=reg2.exec(rowsCompare);
+if(reg1.test(rowsCompare)){
+    var color1=str1[1];
+    $("#tablecontent_" +i+ "_" + (t+1) + "").children("font").css("color",color1);
+    $("#tablecontent_" +i+ "_" + (t+2) + "").children("font").css("color", color1);
+}else if(reg2.test(rowsCompare)){
+    var color2=str2[1];
+    $("#tablecontent_" +i+ "_" + (t+1) + "").css("background",color2);
+    $("#tablecontent_" +i+ "_" + (t + 2) + "").css("background",color2);
+}
