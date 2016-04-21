@@ -59,3 +59,14 @@ if(reg1.test(rowsCompare)){
     $("#tablecontent_" +i+ "_" + (t+1) + "").css("background",color2);
     $("#tablecontent_" +i+ "_" + (t + 2) + "").css("background",color2);
 }
+
+
+
+
+
+
+
+//http://echarts.baidu.com/demo.html#pie-nest
+//echart
+
+//http://echarts.baidu.com/examples.html
